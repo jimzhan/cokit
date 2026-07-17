@@ -61,7 +61,7 @@ After installation, run the safest, read-only checks available for the target pr
 
 ```bash
 # 1. Update skills with `skills-lock.json`
-npx skills@latest update --project -a opencode
+npx skills@latest update --project
 
 # 2. Verify only intended files were touched
 git status --short
