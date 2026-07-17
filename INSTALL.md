@@ -1,4 +1,4 @@
-# Cokit: AI-Driven Project Scaffolding Guide
+# SpecKit: AI-Driven Project Scaffolding Guide
 
 > **AI Execution Directive**: Follow these instructions strictly when a user asks you to scaffold or integrate a new project with `OpenCode` and `OpenSpec`. Your primary mandate is **non-destructive integration**: never delete, overwrite, or alter existing product code, tests, or package files without explicit, confirmed user consent.
 
@@ -10,14 +10,14 @@ Before proceeding, verify or instruct the user to ensure the following are insta
 - **OpenSpec**: Latest version (Install globally via `npm`).
 
 ## 2. Goal
-Intelligently inject the Cokit spec-driven governance layer (`OpenSpec` + `OpenCode` configurations) into the user's current working directory while preserving 100% of their existing project conventions, code, and documentation.
+Intelligently inject the SpecKit spec-driven governance layer (`OpenSpec` + `OpenCode` configurations) into the user's current working directory while preserving 100% of their existing project conventions, code, and documentation.
 
 ## 3. Source Template Acquisition
 Clone a fresh, isolated copy of the template repository into the system's temporary directory (e.g., `/tmp` on macOS/Linux or `%TEMP%` on Windows) to prevent any accidental pollution of the user's workspace.
 
 ```bash
 # Execute in system temp directory
-git clone --depth 1 https://github.com/jimzhan/cokit.git cokit 
+git clone --depth 1 https://github.com/jimzhan/speckit.git speckit 
 ```
 
 ## 4. Target Directory Review (AI Checklist)
@@ -74,4 +74,4 @@ opencode providers list
 **Fallback Rule**: If `openspec` or `opencode` commands are unavailable in the user's environment, clearly report this limitation to the user, but leave the installed files in place so the user can verify them manually later.
 
 ## 8. Cleanup (OPTIONAL)
-Once the user confirms the installation is successful, delete the temporary cloned repository (`cokit`) to maintain a clean environment.
+Once the user confirms the installation is successful, delete the temporary cloned repository (`speckit`) to maintain a clean environment.

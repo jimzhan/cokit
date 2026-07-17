@@ -1,4 +1,4 @@
-# CoKit
+# SpecKit
 
 SpecKit is an opinionated, AI-driven application development boilerplate.
 
@@ -8,7 +8,7 @@ SpecKit is an opinionated, AI-driven application development boilerplate.
 - Tell OpenCode:
 
   ```
-  Fetch and follow instructions from https://raw.githubusercontent.com/jimzhan/cokit/refs/heads/main/INSTALL.md
+  Fetch and follow instructions from https://raw.githubusercontent.com/jimzhan/speckit/refs/heads/main/INSTALL.md
   ```
 
 
