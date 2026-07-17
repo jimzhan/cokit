@@ -28,7 +28,6 @@ Before copying any files, inspect the user's current working directory (`process
 - [ ] `skills-lock.json`
 - [ ] `openspec/` directory
 - [ ] `.opencode/` directory
-- [ ] `.agents/` directory
 
 **Rule**: Identify any existing OpenSpec, OpenCode, agent, or skill settings. You must preserve user-specific instructions and project conventions.
 
@@ -38,7 +37,6 @@ Before copying any files, inspect the user's current working directory (`process
 Safely copy the following template files and directories into the target project root:
 - `openspec/`
 - `.opencode/`
-- `.agents/`
 - `skills-lock.json`
 - `opencode.json`
 
@@ -52,7 +50,7 @@ Safely copy the following template files and directories into the target project
 2. **Inspect**: Scan the target project for existing configuration and documentation files (refer to Section 4).
 3. **Copy**: Transfer missing template directories and files from the temp directory to the target project.
 4. **Merge**: Safely append the OpenSpec git-discipline block to `AGENTS.md` if it exists.
-5. **Conflict Resolution**: If `opencode.json`, `skills-lock.json`, `openspec/`, `.opencode/`, or `.agents/` already exist, **pause execution**. Compare the template version/structure with the target version. Present the differences to the user and **ask for explicit approval** before replacing, merging, or restructuring anything.
+5. **Conflict Resolution**: If `opencode.json`, `skills-lock.json`, `openspec/`, or `.opencode/` already exist, **pause execution**. Compare the template version/structure with the target version. Present the differences to the user and **ask for explicit approval** before replacing, merging, or restructuring anything.
 6. **Preservation Guarantee**: Ensure the target project's product code (`src/`, `lib/`, etc.), package files (`package.json`, `requirements.txt`), application docs, and existing tests remain 100% unchanged.
 7. **Summarize**: Verify the resulting file tree and output a clear, bulleted summary of exactly what was added or modified.
 
@@ -61,13 +59,16 @@ Safely copy the following template files and directories into the target project
 After installation, run the safest, read-only checks available for the target project to ensure no breakage occurred:
 
 ```bash
-# 1. Verify only intended files were touched
+# 1. Update skills with `skills-lock.json`
+npx skills@latest update
+
+# 2. Verify only intended files were touched
 git status --short
 
-# 2. Validate OpenSpec schema (if the CLI is available in the environment)
+# 3. Validate OpenSpec schema (if the CLI is available in the environment)
 openspec schema validate spec-driven
 
-# 3. (Optional) Verify OpenCode providers
+# 4. (Optional) Verify OpenCode providers
 opencode providers list
 ```
 
