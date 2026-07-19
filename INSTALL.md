@@ -66,8 +66,9 @@ npx skills@latest update --project
 # 2. Verify only intended files were touched
 git status --short
 
-# 3. Validate OpenSpec schema (if the CLI is available in the environment)
-openspec schema validate spec-driven
+# 3. OpenSpec health check
+openspec doctor
+openspec schema validate speckit 
 
 # 4. (Optional) Verify OpenCode providers
 opencode providers list
@@ -75,7 +76,5 @@ opencode providers list
 
 **Fallback Rule**: If `openspec` or `opencode` commands are unavailable in the user's environment, clearly report this limitation to the user, but leave the installed files in place so the user can verify them manually later.
 
-## 8. Cleanup (OPTIONAL)
-Once the user confirms the installation is successful:
-- delete the temporary cloned repository (`speckit`) to maintain a clean environment.
-- delete `.claude` if it does not exist before the installation.
+## 8. Cleanup
+Once the user confirms the installation is successful, delete the temporary cloned repository (`speckit`) to maintain a clean environment.
