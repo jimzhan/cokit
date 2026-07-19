@@ -67,7 +67,7 @@ flowchart LR
 - `/opsx-verify` - to validate implementation againsts artifacts (`design.md` and `tasks.md`).
 - `/opsx-update` - to revise a change's planning artifacts and keep them coherent.
 - `/opsx-sync` - to merge delta specs into main project specs:
-  - `openspec/<change-id>/**/spec.md` => `docs/specs/<domain>/spec.md`
+  - `openspec/<change-id>/**/spec.md` => `openspec/specs/<domain>/spec.md`
 
 > [!TIP]
 > `opsx-new` ***over***`/opsx-propose` - `opsx-propose` generates full planning artifacts in a single pass without stakeholder interviews. To enforce rigorous requirement alignment and shared domain modeling (via `grill-with-docs` from [mattpocock/skills](https://github.com/mattpocock/skills)), this unguided one-shot workflow is intentionally disabled by default. 
