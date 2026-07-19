@@ -4,15 +4,8 @@
 
 - **[OpenCode](https://github.com/anomalyco/opencode)** - Model-agnostic agent orchestration.
 
-  - [Oh-my-opencode-slim](https://github.com/alvinunreal/oh-my-opencode-slim) - A Multi-Agent System (MAS) for OpenCode, featuring a specialized agent team built-in to scan codebases, fetch docs, audit architecture, build UI, and run scoped implementation tasks via a single orchestrator. Meet your team below (***Ref*** [Meet the Pantheon](https://github.com/alvinunreal/oh-my-opencode-slim#meet-the-pantheon)):
-    - ***Orchestrator*** - Plans, schedules background specialists, reconciles results, and verifies outcomes.
-    - ***Explorer*** - Handles broad scouting work with speed.
-    - ***Oracle*** - Works on architecture, hard debugging, trade-offs, and code review.    
-    - ***Council*** - Sends your question to multiple models in parallel, gathers their competing judgments, and distills the strongest ideas into a single verdict.
-    - ***Librarian*** - Handles research and documentation lookups, emphasizing speed and efficiency.
-    - ***Designer*** - Focuses on UI/UX judgment, frontend implementation, and visual polish.
-    - ***Fixer*** - Works on execution tasks and straightforward code changes based on a concrete plan or bounded instructions from ***Orchestrator***.
-
+  - [Oh-my-opencode-slim](https://github.com/alvinunreal/oh-my-opencode-slim) - A Multi-Agent System (MAS) for OpenCode, featuring a specialized agent team built-in to scan codebases, fetch docs, audit architecture, build UI, and run scoped implementation tasks via a single orchestrator. Meet your team [here](https://github.com/alvinunreal/oh-my-opencode-slim#meet-the-pantheon).
+  
 - **[OpenSpec](https://github.com/Fission-AI/openspec)** - A spec-driven development framework with **an opinionated workflow** - `speckit`.
 
 
