@@ -1,5 +1,6 @@
 schema: speckit
-
+# Project specs
+specsPath: docs/specs
 # **IMPORTANT** Project context - Replace with your actual project spec below
 # -----------------------------------------------------------------------------
 # context: |
